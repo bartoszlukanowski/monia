@@ -1,0 +1,1237 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Way In Music sp. z o.o.</title>
+  <meta name="description" content="My Way In Music sp. z o.o. — szkoła musicalowa w centrach kultury w okolicach Warszawy.">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="logo.jpg" alt="" class="nav-logo" width="40" height="40">
+        <span>My Way In Music</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#zajecia">Zajęcia</a></li>
+        <li><a href="#cennik">Cennik</a></li>
+        <li><a href="#wakacje">Wakacje</a></li>
+        <li><a href="#kadra">Kadra</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#lokalizacje">Lokalizacje</a></li>
+        <li><a href="#wspolpraca">Współpraca</a></li>
+        <li><a href="#pokazy">Pokazy</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+      <div class="hero-grain"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-tag reveal">Szkoła musicalowa &middot; okolice Warszawy</p>
+        <h1 class="reveal">
+          <span class="brand-gradient">My Way In Music</span>
+        </h1>
+        <p class="hero-sub reveal">sp. z o.o.</p>
+        <p class="hero-lead reveal">
+          Rozwijamy umiejętności wokalne, aktorskie i&nbsp;taneczne.
+          Budujemy pewność siebie i&nbsp;odkrywamy kreatywność sceniczną.
+          Prowadzimy inspirujące zajęcia musicalowe w&nbsp;centrach kultury
+          w&nbsp;okolicach Warszawy.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#kontakt" class="btn btn--primary">Zapisz się</a>
+          <a href="#oferta" class="btn btn--ghost">Poznaj ofertę</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-logo-float">
+          <img src="logo.jpg" alt="My Way In Music — logo" width="320" height="320">
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0-5-5m5 5 5-5"/></svg>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── O NAS ─── -->
+    <section id="o-nas" class="section">
+      <div class="container split">
+        <div class="split-text">
+          <p class="section-tag reveal">Kim jesteśmy</p>
+          <h2 class="reveal">Pasja do musicalu,<br>która odmienia życie</h2>
+          <p class="reveal">
+            <strong>My Way In Music sp. z o.o.</strong> to firma założona przez
+            <strong>Monikę Tarasiuk</strong> oraz <strong>Laurę Morawską</strong>.
+            Specjalizujemy się w prowadzeniu zajęć musicalowych w centrach kultury
+            na terenie podwarszawskich miejscowości.
+          </p>
+          <p class="reveal">
+            Naszą misją jest łączenie edukacji artystycznej z dobrą energią
+            i praktyką sceniczną. Uczestnicy uczą się śpiewu,
+            aktorstwa i pracy z ciałem — przygotowując się do występów
+            oraz budując swobodę na scenie.
+          </p>
+        </div>
+        <div class="split-visual reveal">
+          <div class="about-card-grid">
+            <div class="about-card about-card--img">
+              <div class="about-card-photo"><img src="images/about/spiew.jpg" alt="Śpiew" loading="lazy"></div>
+              <span>Śpiew</span>
+            </div>
+            <div class="about-card about-card--img">
+              <div class="about-card-photo"><img src="images/about/ruch-sceniczny.jpg" alt="Ruch sceniczny" loading="lazy"></div>
+              <span>Ruch sceniczny</span>
+            </div>
+            <div class="about-card about-card--img">
+              <div class="about-card-photo"><img src="images/about/aktorstwo.jpg" alt="Aktorstwo" loading="lazy"></div>
+              <span>Aktorstwo</span>
+            </div>
+            <div class="about-card about-card--img">
+              <div class="about-card-photo"><img src="images/about/taniec.jpg" alt="Taniec" loading="lazy"></div>
+              <span>Taniec</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── OFERTA ─── -->
+    <section id="oferta" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Co oferujemy</p>
+        <h2 class="section-heading--light reveal">Nasza oferta</h2>
+        <div class="offer-grid">
+          <article class="offer-card reveal">
+            <div class="offer-card-photo"><img src="images/about/warsztaty-regularne.jpg" alt="Warsztaty regularne" loading="lazy"></div>
+            <h3>Warsztaty regularne</h3>
+            <p>Warsztaty regularne w&nbsp;Centrum Kultury Raszyn — cotygodniowe zajęcia musicalowe dla różnych grup wiekowych.</p>
+          </article>
+          <article class="offer-card reveal">
+            <div class="offer-card-photo"><img src="images/about/turnusy-wakacyjne.jpg" alt="Turnusy wakacyjne" loading="lazy"></div>
+            <h3>Turnusy wakacyjne</h3>
+            <p>Tygodniowe przygody musicalowe zakończone pokazem na scenie — śpiew, taniec, aktorstwo i niezapomniane wspomnienia.</p>
+          </article>
+          <article class="offer-card reveal">
+            <div class="offer-card-photo"><img src="images/about/pokazy-finaly.jpg" alt="Pokazy i finały" loading="lazy"></div>
+            <h3>Pokazy i finały</h3>
+            <p>Prezentacje efektów pracy podczas koncertów i wydarzeń kulturalnych.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ZAJĘCIA ─── -->
+    <section id="zajecia" class="section">
+      <div class="container">
+        <p class="section-tag reveal">Nasze grupy</p>
+        <h2 class="reveal">Zajęcia</h2>
+        <p class="reveal zajecia-intro">
+          Prowadzimy regularne zajęcia musicalowe w&nbsp;Centrum Kultury Raszyn.
+          Każda grupa pracuje nad śpiewem, aktorskim rzemiosłem i&nbsp;ruchem scenicznym,
+          przygotowując się do semestralnych pokazów.
+        </p>
+        <div class="zajecia-grid">
+          <article class="zajecia-card reveal">
+            <div class="zajecia-header">
+              <h3>Grupa wtorek–czwartek</h3>
+              <span class="zajecia-hours">4h / tydzień</span>
+            </div>
+            <div class="zajecia-schedule">
+              <div class="zajecia-day">
+                <span class="zajecia-day-name">Wtorek</span>
+                <span class="zajecia-day-time">2h zajęć</span>
+              </div>
+              <div class="zajecia-day">
+                <span class="zajecia-day-name">Czwartek</span>
+                <span class="zajecia-day-time">2h zajęć</span>
+              </div>
+            </div>
+            <a href="mailto:mywayinmusic@gmail.com?subject=Zapisy%20na%20zajęcia%20wt-czw&body=Dzień%20dobry,%0Achciałbym/chciałabym%20zapisać%20dziecko%20na%20zajęcia%20(wt-czw).%0AImię%20i%20nazwisko:%20%0AWiek:%20" class="btn btn--primary zajecia-cta">Zapisz się!</a>
+          </article>
+          <article class="zajecia-card reveal">
+            <div class="zajecia-header">
+              <h3>Grupa środa</h3>
+              <span class="zajecia-hours">3h / tydzień</span>
+            </div>
+            <div class="zajecia-schedule">
+              <div class="zajecia-day">
+                <span class="zajecia-day-name">Środa</span>
+                <span class="zajecia-day-time">3h zajęć</span>
+              </div>
+            </div>
+            <a href="mailto:mywayinmusic@gmail.com?subject=Zapisy%20na%20zajęcia%20śr&body=Dzień%20dobry,%0Achciałbym/chciałabym%20zapisać%20dziecko%20na%20zajęcia%20(środa).%0AImię%20i%20nazwisko:%20%0AWiek:%20" class="btn btn--primary zajecia-cta">Zapisz się!</a>
+          </article>
+          <article class="zajecia-card reveal">
+            <div class="zajecia-header">
+              <h3>Grupa wtorek</h3>
+              <span class="zajecia-hours">2h / tydzień</span>
+            </div>
+            <div class="zajecia-schedule">
+              <div class="zajecia-day">
+                <span class="zajecia-day-name">Wtorek</span>
+                <span class="zajecia-day-time">2h zajęć</span>
+              </div>
+            </div>
+            <a href="mailto:mywayinmusic@gmail.com?subject=Zapisy%20na%20zajęcia%20wt&body=Dzień%20dobry,%0Achciałbym/chciałabym%20zapisać%20dziecko%20na%20zajęcia%20(wtorek).%0AImię%20i%20nazwisko:%20%0AWiek:%20" class="btn btn--primary zajecia-cta">Zapisz się!</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CENNIK ─── -->
+    <section id="cennik" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Inwestycja w rozwój</p>
+        <h2 class="section-heading--light reveal">Cennik</h2>
+        <div class="cennik-grid">
+          <div class="cennik-card reveal">
+            <div class="cennik-label">Wtorek – Czwartek</div>
+            <div class="cennik-price">448 <span>zł / msc</span></div>
+            <div class="cennik-info">4 godziny w tygodniu</div>
+          </div>
+          <div class="cennik-card cennik-card--accent reveal">
+            <div class="cennik-label">Środa</div>
+            <div class="cennik-price">360 <span>zł / msc</span></div>
+            <div class="cennik-info">3 godziny w tygodniu</div>
+          </div>
+          <div class="cennik-card reveal">
+            <div class="cennik-label">Wtorek</div>
+            <div class="cennik-price">224 <span>zł / msc</span></div>
+            <div class="cennik-info">2 godziny w tygodniu</div>
+          </div>
+        </div>
+        <p class="cennik-note reveal">Zapisy na obóz już w grudniu!</p>
+      </div>
+    </section>
+
+    <!-- ─── WAKACJE ─── -->
+    <section id="wakacje" class="section">
+      <div class="container">
+        <p class="section-tag reveal">Lato 2026</p>
+        <h2 class="reveal">Wakacyjne Turnusy Musicalowe</h2>
+        <p class="reveal wakacje-intro">
+          Zapraszamy dzieci i młodzież na wyjątkowe wakacyjne warsztaty musicalowe!
+          Każdy turnus to niezapomniana przygoda pełna śpiewu, tańca, aktorstwa i kreatywnej zabawy.
+          Wspólnie przygotujemy fragmenty znanych musicali, rozwiniemy sceniczne talenty
+          i spędzimy czas w inspirującej atmosferze.
+        </p>
+
+        <div class="turnusy-grid">
+          <!-- Turnus 1 -->
+          <details class="turnus-card turnus-expandable reveal">
+            <summary class="turnus-summary">
+              <div class="turnus-header">
+                <span class="turnus-emoji">🌹</span>
+                <h3>Piękna i Bestia</h3>
+                <span class="turnus-badge turnus-badge--done">Zakończony</span>
+              </div>
+              <div class="turnus-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  <span>6–11 lipca</span>
+                </div>
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Centrum Kultury Raszyn</span>
+                </div>
+                <div class="turnus-detail turnus-detail--price">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                  <span>Zapytaj o cenę</span>
+                </div>
+              </div>
+              <span class="turnus-expand-hint">Kliknij, aby zobaczyć szczegóły</span>
+            </summary>
+            <div class="turnus-details">
+              <div class="turnus-full-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>8:30–15:30</span>
+                </div>
+                <div class="turnus-detail turnus-detail--muted">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+                  <span>Wyżywienie: we własnym zakresie</span>
+                </div>
+              </div>
+              <p class="turnus-desc">Przenieś się do zaczarowanego świata pełnego magii, przyjaźni i niezwykłych bohaterów. Podczas warsztatów uczestnicy poznają tajniki musicalu „Piękna i&nbsp;Bestia", rozwijając umiejętności wokalne, taneczne i&nbsp;aktorskie.</p>
+              <div class="turnus-photos">
+                <img src="images/pokazy/basnie-i-potwory.jpg" alt="Turnus Piękna i Bestia" loading="lazy">
+              </div>
+              <div class="turnus-team">
+                <button type="button" class="turnus-person" data-bio="Ukończył wydział aktorski Krakowskich Szkół Artystycznych. Gra w teatrze Capitol („Akademia Pana Kleksa", „Palce Lizać…") oraz współpracuje ze Sceną Metro. Od dziecka związany też z tańcem; udział w produkcjach polskich i międzynarodowych.">
+                  <img src="images/kadra/dariusz.jpg" alt="Dariusz Dyla" loading="lazy">
+                  <span>Darek<small>Aktorstwo</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Absolwentka ZPSM nr 4 im. K. Szymanowskiego i UMFC (dyrygentura chóralna). Studiuje dyrygenturę symfoniczną w Poznaniu. Laureatka konkursów pianistycznych, śpiewała w Chopin University Chamber Choir. Prowadzi też zajęcia fortepianowe.">
+                  <img src="images/kadra/regina.jpg" alt="Regina Kwiek" loading="lazy">
+                  <span>Regina<small>Śpiew</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Przez 13 lat tańczyła w zespołach turniejowych — jazz, modern, taniec klasyczny i akrobatyka. Obecnie studentka Tańca Współczesnego na UMFC w Warszawie.">
+                  <img src="images/kadra/zofia.jpg" alt="Zofia Sówka" loading="lazy">
+                  <span>Zofia<small>Taniec</small></span>
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <!-- Turnus 2 -->
+          <details class="turnus-card turnus-expandable reveal">
+            <summary class="turnus-summary">
+              <div class="turnus-header">
+                <span class="turnus-emoji">🎤</span>
+                <h3>High School Musical</h3>
+              </div>
+              <div class="turnus-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  <span>20–25 lipca</span>
+                </div>
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Centrum Kultury Raszyn</span>
+                </div>
+                <div class="turnus-detail turnus-detail--price">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                  <span>Zapytaj o cenę</span>
+                </div>
+              </div>
+              <span class="turnus-expand-hint">Kliknij, aby zobaczyć szczegóły</span>
+            </summary>
+            <div class="turnus-details">
+              <div class="turnus-full-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>8:30–15:30</span>
+                </div>
+                <div class="turnus-detail turnus-detail--muted">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+                  <span>Wyżywienie: we własnym zakresie</span>
+                </div>
+              </div>
+              <p class="turnus-desc">Energia, muzyka i świetna zabawa! Razem stworzymy widowisko inspirowane kultowym „High School Musical", ucząc się choreografii, piosenek i pracy zespołowej na scenie.</p>
+              <div class="turnus-team">
+                <button type="button" class="turnus-person" data-bio="Wokalistka i aktorka scen muzycznych. Absolwentka PSM w Kutnie, studentka UMFC na kierunku musical. Laureatka festiwali m.in. Anny German i „Reflektor". Występowała w Warszawskiej Operze Kameralnej i musicalach „In the Heights", „Jesus Christ Superstar" i „Pippin".">
+                  <img src="images/kadra/anna.jpg" alt="Anna Kowalewska" loading="lazy">
+                  <span>Ania<small>Wokal</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Ukończył wydział aktorski Krakowskich Szkół Artystycznych. Gra w teatrze Capitol („Akademia Pana Kleksa", „Palce Lizać…") oraz współpracuje ze Sceną Metro. Od dziecka związany też z tańcem; udział w produkcjach polskich i międzynarodowych.">
+                  <img src="images/kadra/dariusz.jpg" alt="Dariusz Dyla" loading="lazy">
+                  <span>Darek<small>Aktorstwo</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Instruktor hip-hop i commercial, wykształcony w Egurrola Dance Studio oraz Centrum Tańca Blanki Winiarskiej. Przez 4 lata członek zespołu „BeArt".">
+                  <img src="images/kadra/aleksander.jpg" alt="Aleksander Dąbrowski" loading="lazy">
+                  <span>Alek<small>Taniec</small></span>
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <!-- Turnus 3 -->
+          <details class="turnus-card turnus-expandable reveal">
+            <summary class="turnus-summary">
+              <div class="turnus-header">
+                <span class="turnus-emoji">📚</span>
+                <h3>Matylda</h3>
+              </div>
+              <div class="turnus-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  <span>17–22 sierpnia</span>
+                </div>
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Mediateka, Grodzisk Mazowiecki</span>
+                </div>
+                <div class="turnus-detail turnus-detail--price">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                  <span>Zapytaj o cenę</span>
+                </div>
+              </div>
+              <span class="turnus-expand-hint">Kliknij, aby zobaczyć szczegóły</span>
+            </summary>
+            <div class="turnus-details">
+              <div class="turnus-full-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>9:00–14:00</span>
+                </div>
+                <div class="turnus-detail turnus-detail--muted">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+                  <span>Wyżywienie: we własnym zakresie</span>
+                </div>
+              </div>
+              <p class="turnus-desc">Poznaj historię niezwykle utalentowanej i odważnej Matyldy. To turnus pełen kreatywności, humoru i inspirujących scen, które pozwolą uczestnikom odkryć własny potencjał.</p>
+              <div class="turnus-team">
+                <button type="button" class="turnus-person" data-bio="Absolwentka dwóch szkół musicalowych, dla której taniec jest sposobem na rozwój i wyrażanie siebie. Doświadczenie sceniczne zdobywała podczas licznych występów przed publicznością.">
+                  <img src="images/kadra/maja.jpg" alt="Maja Czułowska" loading="lazy">
+                  <span>Maja<small>Taniec</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Student II roku Aktorstwa Nowych Mediów w Warszawskiej Szkole Filmowej. Przygodę z aktorstwem rozpoczął w wieku pięciu lat. Występował w Teatrze Buffo i produkcjach Netflixa.">
+                  <img src="images/kadra/artur.jpg" alt="Artur Kozłowski" loading="lazy">
+                  <span>Artur<small>Aktorstwo</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Wokalistka, instrumentalistka i instruktorka z kilkuletnim doświadczeniem. Absolwentka PSM im. K. Szymanowskiego w Warszawie, studentka UMFC.">
+                  <img src="images/kadra/monia.jpg" alt="Monika Tarasiuk" loading="lazy">
+                  <span>Monika<small>Śpiew</small></span>
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <!-- Turnus 4 -->
+          <details class="turnus-card turnus-expandable reveal">
+            <summary class="turnus-summary">
+              <div class="turnus-header">
+                <span class="turnus-emoji">🧞</span>
+                <h3>Aladyn</h3>
+              </div>
+              <div class="turnus-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  <span>25–29 sierpnia</span>
+                </div>
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>MOK Piastów</span>
+                </div>
+                <div class="turnus-detail turnus-detail--price">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                  <span>Zapytaj o cenę</span>
+                </div>
+              </div>
+              <span class="turnus-expand-hint">Kliknij, aby zobaczyć szczegóły</span>
+            </summary>
+            <div class="turnus-details">
+              <div class="turnus-full-meta">
+                <div class="turnus-detail">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>8:30–15:30</span>
+                </div>
+                <div class="turnus-detail turnus-detail--muted">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+                  <span>Wyżywienie: we własnym zakresie</span>
+                </div>
+              </div>
+              <p class="turnus-desc">Wyrusz z nami w magiczną podróż do świata Aladyna! Egzotyczne rytmy, barwne choreografie i niezapomniane przygody sprawią, że zakończenie wakacji będzie naprawdę wyjątkowe.</p>
+              <div class="turnus-team">
+                <button type="button" class="turnus-person" data-bio="Od ponad sześciu lat pracuje z dziećmi i młodzieżą, wspierając ich rozwój artystyczny i emocjonalny. Współzałożycielka My Way in Music.">
+                  <img src="images/kadra/laura.jpg" alt="Laura Morawska" loading="lazy">
+                  <span>Laura<small>Aktorstwo</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Absolwentka dwóch szkół musicalowych, dla której taniec jest sposobem na rozwój i wyrażanie siebie. Doświadczenie sceniczne zdobywała podczas licznych występów przed publicznością.">
+                  <img src="images/kadra/maja.jpg" alt="Maja Czułowska" loading="lazy">
+                  <span>Maja<small>Taniec</small></span>
+                </button>
+                <button type="button" class="turnus-person" data-bio="Wokalistka, instrumentalistka i instruktorka z kilkuletnim doświadczeniem. Absolwentka PSM im. K. Szymanowskiego w Warszawie, studentka UMFC.">
+                  <img src="images/kadra/monia.jpg" alt="Monika Tarasiuk" loading="lazy">
+                  <span>Monika<small>Śpiew</small></span>
+                </button>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Dlaczego warto -->
+        <div class="wakacje-why reveal">
+          <h3>Dlaczego warto?</h3>
+          <ul class="wakacje-benefits">
+            <li>Rozwój talentów wokalnych, tanecznych i aktorskich</li>
+            <li>Profesjonalna kadra instruktorów</li>
+            <li>Przyjazna atmosfera i integracja uczestników</li>
+            <li>Finałowy pokaz dla rodziny i przyjaciół</li>
+          </ul>
+        </div>
+
+        <!-- CTA zapisy -->
+        <div class="wakacje-cta reveal">
+          <p>Liczba miejsc jest ograniczona — <strong>zapisz się już dziś</strong> i spędź wakacje na scenie!</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVw_vjYwttB2YHhikqBthcQoe2xxaT92-dBLxoN6U6Yu6XAQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+            Zapisz się!
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── KADRA ─── -->
+    <section id="kadra" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Nasz zespół</p>
+        <h2 class="section-heading--light reveal">Kadra</h2>
+        <p class="reveal kadra-intro">
+          Za sukcesem naszych zajęć stoją ludzie pełni pasji, doświadczenia i miłości do sceny.
+          Naszą kadrę tworzą wykwalifikowani instruktorzy śpiewu, tańca i aktorstwa oraz wyjątkowi artyści
+          i pedagodzy, którzy na co dzień współpracują z nami przy realizacji warsztatów i spektakli.
+        </p>
+        <p class="reveal kadra-intro">
+          Poznaj osoby, które inspirują, wspierają rozwój młodych talentów i każdego dnia
+          pomagają uczestnikom odkrywać radość płynącą z musicalu.
+        </p>
+        <div class="kadra-grid">
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/monia.jpg" alt="Monika Tarasiuk" loading="lazy">
+            </div>
+            <h3>Monika Tarasiuk</h3>
+            <p class="kadra-role">Wokal &middot; Współzałożycielka</p>
+            <p class="kadra-bio">Wokalistka, instrumentalistka i instruktorka z kilkuletnim doświadczeniem. Absolwentka PSM im. K. Szymanowskiego w Warszawie, studentka UMFC. Laureatka wielu konkursów wokalnych, uczestniczka szkoleń Estill Voice Training i Voice Progress. Specjalizuje się w pracy z dziećmi o różnorodnych potrzebach rozwojowych.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/laura.jpg" alt="Laura Morawska" loading="lazy">
+            </div>
+            <h3>Laura Morawska</h3>
+            <p class="kadra-role">Aktorstwo &middot; Współzałożycielka</p>
+            <p class="kadra-bio">Od ponad sześciu lat pracuje z dziećmi i młodzieżą, wspierając ich rozwój artystyczny i emocjonalny. Posiada doświadczenie przy profesjonalnych produkcjach musicalowych i teatralnych, w tym jako inspicjentka w Teatrze Capitol. Współzałożycielka My Way in Music, stawia na budowanie pewności siebie i swobody scenicznej.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/aleksander.jpg" alt="Aleksander Dąbrowski" loading="lazy">
+            </div>
+            <h3>Aleksander Dąbrowski</h3>
+            <p class="kadra-role">Taniec</p>
+            <p class="kadra-bio">Instruktor hip-hop i commercial, wykształcony w Egurrola Dance Studio oraz Centrum Tańca Blanki Winiarskiej. Przez 4 lata członek zespołu „BeArt" — mistrzostwa Polski, Europy i świata. Tańczył w programach TVP u boku Maryli Rodowicz, Michała Szpaka czy Dody. Stawia na rozwój techniczny, samoświadomość i dobrą zabawę.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/antonina.jpg" alt="Antonina Dziubecka" loading="lazy">
+            </div>
+            <h3>Antonina Dziubecka</h3>
+            <p class="kadra-role">Regulacja stresu &middot; Psychologia</p>
+            <p class="kadra-bio">Studentka psychologii z doświadczeniem w pracy z dziećmi — jako prowadząca warsztaty, wychowawczyni półkolonijna oraz asystentka indywidualna. Podczas zajęć pomaga dzieciom w nauce regulacji emocji i stresu przed występem, dbając o to, by każde dziecko czuło się ważne i zauważone.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/artur.jpg" alt="Artur Kozłowski" loading="lazy">
+            </div>
+            <h3>Artur Kozłowski</h3>
+            <p class="kadra-role">Aktorstwo</p>
+            <p class="kadra-bio">Student II roku Aktorstwa Nowych Mediów w Warszawskiej Szkole Filmowej. Przygodę z aktorstwem rozpoczął w wieku pięciu lat. Występował w Teatrze Buffo w „Piotruś Pan", użyczył głosu bohaterom w „Cudowny chłopak" oraz grał w produkcji Netflixa „Rozwodnicy". Z pasją dzieli się swoją wiedzą z młodszymi uczestnikami.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/maja.jpg" alt="Maja Czułowska" loading="lazy">
+            </div>
+            <h3>Maja Czułowska</h3>
+            <p class="kadra-role">Taniec</p>
+            <p class="kadra-bio">Absolwentka dwóch szkół musicalowych, dla której taniec jest sposobem na rozwój i wyrażanie siebie. Doświadczenie sceniczne zdobywała podczas licznych występów przed publicznością. Stawia na profesjonalizm, indywidualne podejście i radość z nauki — nie perfekcję, lecz postęp i emocje towarzyszące tańcowi.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/zofia.jpg" alt="Zofia Sówka" loading="lazy">
+            </div>
+            <h3>Zofia Sówka</h3>
+            <p class="kadra-role">Taniec</p>
+            <p class="kadra-bio">Przez 13 lat tańczyła w zespołach turniejowych — jazz, modern, taniec klasyczny i akrobatyka. Obecnie studentka Tańca Współczesnego na UMFC w Warszawie. Nieustannie poszerza umiejętności w zakresie tańca współczesnego, musicalowego i pantomimy. Z zaangażowaniem inspiruje młodych uczestników do odkrywania radości z ruchu.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/dariusz.jpg" alt="Dariusz Dyla" loading="lazy">
+            </div>
+            <h3>Dariusz Dyla</h3>
+            <p class="kadra-role">Aktorstwo</p>
+            <p class="kadra-bio">Ukończył wydział aktorski Krakowskich Szkół Artystycznych. Aktualnie gra w „Akademii Pana Kleksa" i „Palce Lizać, czyli wybuchowy deser" w teatrze Capitol. Współpracuje z teatrem Capitol oraz Sceną Metro. Od dziecka związany również z tańcem. Bierze udział w licznych projektach i produkcjach — nie tylko polskich, ale i międzynarodowych.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/anna.jpg" alt="Anna Kowalewska" loading="lazy">
+            </div>
+            <h3>Anna Kowalewska</h3>
+            <p class="kadra-role">Wokal &middot; Aktorstwo</p>
+            <p class="kadra-bio">Wokalistka i aktorka scen muzycznych. Absolwentka PSM w Kutnie (skrzypce, wokal jazzowy), studentka UMFC na kierunku musical. Laureatka festiwali m.in. Międzynarodowego Festiwalu Piosenki Anny German, „Reflektor" oraz „Stacja Kutno". Występowała na scenach Warszawskiej Opery Kameralnej, Filharmonii Wałbrzyskiej i Stadionu Narodowego. Brała udział w musicalach „In the Heights", „Jesus Christ Superstar", „Jekyll &amp; Hyde", „Pippin" oraz „Zaginione kolędy".</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/jacek.jpg" alt="Jacek Tarasiuk" loading="lazy">
+            </div>
+            <h3>Jacek Tarasiuk</h3>
+            <p class="kadra-role">Współzałożyciel</p>
+            <p class="kadra-bio">Współzałożyciel My Way in Music, odpowiedzialny za organizację i rozwój projektu. Wspiera działania artystyczne i dba o sprawne funkcjonowanie wszystkich przedsięwzięć szkoły.</p>
+          </div>
+          <div class="kadra-card reveal">
+            <div class="kadra-photo">
+              <img src="images/kadra/regina.jpg" alt="Regina Kwiek" loading="lazy">
+            </div>
+            <h3>Regina Kwiek</h3>
+            <p class="kadra-role">Śpiew</p>
+            <p class="kadra-bio">Absolwentka ZPSM nr 4 im. K. Szymanowskiego w Warszawie oraz studiów licencjackich na UMFC (dyrygentura chóralna). Obecnie studiuje dyrygenturę symfoniczną na Akademii Muzycznej w Poznaniu. Laureatka konkursów i festiwali pianistycznych, śpiewała m.in. w Chopin University Chamber Choir. Prowadzi zajęcia z gry na fortepianie — z dziećmi, młodzieżą i dorosłymi — stawiając na życzliwą atmosferę i radość ze wspólnego muzykowania.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALERIA ─── -->
+    <section id="galeria" class="section">
+      <div class="container">
+        <p class="section-tag reveal">Momenty</p>
+        <h2 class="reveal">Galeria</h2>
+      </div>
+      <div class="gallery-carousel reveal" id="galleryCarousel">
+        <div class="gallery-track" id="galleryTrack">
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-01.jpeg" alt="My Way In Music — zdjęcie 1" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-02.jpeg" alt="My Way In Music — zdjęcie 2" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-03.jpeg" alt="My Way In Music — zdjęcie 3" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-04.jpeg" alt="My Way In Music — zdjęcie 4" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-05.jpeg" alt="My Way In Music — zdjęcie 5" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-06.jpeg" alt="My Way In Music — zdjęcie 6" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-07.jpeg" alt="My Way In Music — zdjęcie 7" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-08.jpeg" alt="My Way In Music — zdjęcie 8" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-09.jpeg" alt="My Way In Music — zdjęcie 9" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-10.jpeg" alt="My Way In Music — zdjęcie 10" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-11.jpeg" alt="My Way In Music — zdjęcie 11" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-12.jpeg" alt="My Way In Music — zdjęcie 12" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-13.jpeg" alt="My Way In Music — zdjęcie 13" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-14.jpeg" alt="My Way In Music — zdjęcie 14" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-15.jpeg" alt="My Way In Music — zdjęcie 15" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-16.jpeg" alt="My Way In Music — zdjęcie 16" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-17.jpeg" alt="My Way In Music — zdjęcie 17" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-18.jpeg" alt="My Way In Music — zdjęcie 18" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-19.jpeg" alt="My Way In Music — zdjęcie 19" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-20.jpeg" alt="My Way In Music — zdjęcie 20" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-21.jpeg" alt="My Way In Music — zdjęcie 21" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-22.jpeg" alt="My Way In Music — zdjęcie 22" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-23.jpeg" alt="My Way In Music — zdjęcie 23" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-24.jpeg" alt="My Way In Music — zdjęcie 24" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-25.jpeg" alt="My Way In Music — zdjęcie 25" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-26.jpeg" alt="My Way In Music — zdjęcie 26" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-27.jpeg" alt="My Way In Music — zdjęcie 27" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-28.jpeg" alt="My Way In Music — zdjęcie 28" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-29.jpeg" alt="My Way In Music — zdjęcie 29" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-30.jpeg" alt="My Way In Music — zdjęcie 30" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-31.jpeg" alt="My Way In Music — zdjęcie 31" loading="lazy"></figure>
+          <figure class="gallery-slide" tabindex="0"><img src="images/pokazy/pokaz-32.jpeg" alt="My Way In Music — zdjęcie 32" loading="lazy"></figure>
+        </div>
+        <button class="gallery-arrow gallery-arrow--prev" id="galleryPrev" aria-label="Poprzednie">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="gallery-arrow gallery-arrow--next" id="galleryNext" aria-label="Następne">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ─── LIGHTBOX ─── -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Zamknij">&times;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    </div>
+
+    <!-- ─── LOKALIZACJE ─── -->
+    <section id="lokalizacje" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Blisko Ciebie</p>
+        <h2 class="section-heading--light reveal">Gdzie nas znajdziesz?</h2>
+        <div class="lokalizacje-split">
+          <div class="lokalizacje-cards reveal">
+            <article class="loc-card loc-card--single">
+              <div class="loc-card-photo">
+                <img src="images/pokazy/pokaz-07.jpeg" alt="Centrum Kultury Raszyn" loading="lazy">
+              </div>
+              <div class="loc-card-body">
+                <h3>Centrum Kultury Raszyn</h3>
+                <p class="loc-address">al. Krakowska 29A, 05-090 Raszyn</p>
+                <a href="https://maps.google.com/?q=Centrum+Kultury+Raszyn+Krakowska+29A" target="_blank" rel="noopener noreferrer" class="loc-link">Otwórz w Mapach Google</a>
+              </div>
+            </article>
+            <p class="loc-soon">Wkrótce pojawią się nowe lokalizacje — śledź nasze aktualności!</p>
+          </div>
+          <div class="lokalizacje-map reveal">
+            <div id="map" class="map-canvas" role="img" aria-label="Mapa z lokalizacją zajęć My Way In Music"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WSPÓŁPRACA ─── -->
+    <section id="wspolpraca" class="section">
+      <div class="container">
+        <p class="section-tag reveal">Razem możemy więcej</p>
+        <h2 class="reveal">Współpraca</h2>
+        <p class="reveal wspolpraca-lead">
+          Chętnie podzielimy się naszą pasją do musicalu, muzyki, tańca i&nbsp;teatru podczas Twojego wydarzenia.
+          Przygotowujemy programy artystyczne, które uświetniają szkolne uroczystości, festyny, pikniki,
+          wydarzenia kulturalne, firmowe oraz rodzinne. Nasi uczniowie z&nbsp;zaangażowaniem prezentują swoje
+          umiejętności, tworząc pełne energii i&nbsp;emocji występy, które na długo pozostają w&nbsp;pamięci publiczności.
+          Jeśli szukasz wyjątkowej oprawy artystycznej swojego wydarzenia — jesteśmy gotowi wystąpić właśnie u&nbsp;Ciebie.
+        </p>
+
+        <div class="wspolpraca-grid">
+          <div class="wspolpraca-block reveal">
+            <div class="wspolpraca-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="20"/><path d="M20 18v12l10-6z"/></svg>
+            </div>
+            <h3>Pokazy i występy</h3>
+            <p>
+              Nasz zespół może uświetnić Państwa wydarzenie pokazem musicalowym.
+              Przygotowujemy występy inspirowane znanymi musicalami, które zachwycają widzów
+              muzyką, choreografią i sceniczną energią.
+            </p>
+            <p class="wspolpraca-for"><strong>Program artystyczny możemy zaprezentować na:</strong></p>
+            <ul class="wspolpraca-list">
+              <li>wydarzeniach kulturalnych</li>
+              <li>festynach i piknikach rodzinnych</li>
+              <li>dniach miast i gmin</li>
+              <li>uroczystościach szkolnych</li>
+              <li>wydarzeniach firmowych i lokalnych inicjatywach społecznych</li>
+            </ul>
+          </div>
+
+          <div class="wspolpraca-block reveal">
+            <div class="wspolpraca-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 4l5.09 10.32L40.8 16.4l-8.4 8.19 1.98 11.56L24 30.9l-10.38 5.25 1.98-11.56-8.4-8.19 11.71-2.08z"/></svg>
+            </div>
+            <h3>Warsztaty musicalowe</h3>
+            <p>
+              Organizujemy autorskie warsztaty musicalowe dla dzieci i młodzieży, podczas których uczestnicy
+              poznają podstawy śpiewu, tańca i aktorstwa. Program dostosowujemy do wieku grupy
+              oraz charakteru wydarzenia, tworząc zajęcia pełne energii, kreatywności i dobrej zabawy.
+            </p>
+            <p class="wspolpraca-for"><strong>Doskonała propozycja dla:</strong></p>
+            <ul class="wspolpraca-list">
+              <li>szkół podstawowych i średnich</li>
+              <li>przedszkoli</li>
+              <li>domów kultury</li>
+              <li>bibliotek i mediatek</li>
+              <li>organizatorów półkolonii i wydarzeń dla dzieci</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wspolpraca-cta reveal">
+          <h3>Zaproś nas do siebie</h3>
+          <p>
+            Każdą współpracę traktujemy indywidualnie. Chętnie przygotujemy ofertę dopasowaną
+            do potrzeb Państwa placówki lub wydarzenia. Jeśli szukają Państwo wyjątkowej atrakcji,
+            kreatywnych warsztatów lub profesjonalnego pokazu musicalowego — zapraszamy do kontaktu!
+          </p>
+          <p><strong>Razem stwórzmy niezapomniane wydarzenie pełne muzyki, ruchu i teatralnej magii.</strong></p>
+          <a href="mailto:mywayinmusic@gmail.com?subject=Współpraca%20—%20zapytanie%20ofertowe" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 4 10 8 10-8"/></svg>
+            Napisz do nas
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── NASZE POKAZY ─── -->
+    <section id="pokazy" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Na scenie</p>
+        <h2 class="section-heading--light reveal">Nasze Pokazy</h2>
+        <p class="reveal pokazy-intro">
+          Każdy pokaz to wyjątkowe zwieńczenie naszej pracy, pasji i zaangażowania uczestników.
+          Na scenie łączymy śpiew, taniec i aktorstwo, tworząc widowiska pełne emocji, energii i musicalowej magii.
+        </p>
+        <p class="reveal pokazy-intro">
+          Choć nasza historia dopiero się rozwija, jesteśmy dumni z każdego zrealizowanego projektu.
+          Poniżej prezentujemy nasze dotychczasowe pokazy oraz artystyczne przedsięwzięcia,
+          które wspólnie stworzyliśmy. To dopiero początek — przed nami jeszcze wiele scenicznych przygód!
+        </p>
+
+        <div class="pokazy-timeline">
+          <article class="pokazy-item reveal">
+            <div class="pokazy-dot"></div>
+            <time class="pokazy-date" datetime="2025-08-23">23 sierpnia 2025</time>
+            <h3>Dzieckiem Być</h3>
+            <p>Scena Centrum Kultury Raszyn — pokaz turnusu wakacyjnego.</p>
+            <div class="pokazy-photos">
+              <img src="images/pokazy/dzieckiem-byc.jpg" alt="Pokaz Dzieckiem Być" loading="lazy">
+            </div>
+          </article>
+          <article class="pokazy-item reveal">
+            <div class="pokazy-dot"></div>
+            <time class="pokazy-date" datetime="2025-12-20">20 grudnia 2025</time>
+            <h3>Świat Musicalu</h3>
+            <p>Scena Centrum Kultury Raszyn — pokaz semestralny.</p>
+            <div class="pokazy-photos">
+              <img src="images/pokazy/swiat-musicalu.jpg" alt="Pokaz Świat Musicalu" loading="lazy">
+            </div>
+          </article>
+          <article class="pokazy-item reveal">
+            <div class="pokazy-dot"></div>
+            <time class="pokazy-date" datetime="2026-06-21">21 czerwca 2026</time>
+            <h3>Dzień Dziecka</h3>
+            <p>Piknik w Raszynie — występ plenerowy.</p>
+            <div class="pokazy-photos">
+              <img src="images/pokazy/pokaz-05.jpeg" alt="Dzień Dziecka" loading="lazy">
+            </div>
+          </article>
+          <article class="pokazy-item reveal">
+            <div class="pokazy-dot"></div>
+            <time class="pokazy-date" datetime="2026-06-23">23 czerwca 2026</time>
+            <h3>Casting Marzeń</h3>
+            <p>Wyjątkowe wydarzenie artystyczne.</p>
+            <div class="pokazy-photos">
+              <img src="images/pokazy/pokaz-06.jpeg" alt="Casting Marzeń" loading="lazy">
+            </div>
+          </article>
+          <article class="pokazy-item reveal">
+            <div class="pokazy-dot"></div>
+            <time class="pokazy-date" datetime="2026-07-11">11 lipca 2026</time>
+            <h3>Baśnie i Potwory</h3>
+            <p>Pokaz turnusu wakacyjnego „Piękna i&nbsp;Bestia" — Centrum Kultury Raszyn.</p>
+            <div class="pokazy-photos">
+              <img src="images/pokazy/basnie-i-potwory.jpg" alt="Baśnie i Potwory" loading="lazy">
+            </div>
+          </article>
+          <article class="pokazy-item reveal">
+            <div class="pokazy-dot"></div>
+            <time class="pokazy-date" datetime="2026-07-25">25 lipca 2026</time>
+            <h3>Każdy z nas ma głos</h3>
+            <p>Pokaz turnusu wakacyjnego „High School Musical" — Centrum Kultury Raszyn.</p>
+            <div class="pokazy-photos">
+              <img src="images/pokazy/kazdy-z-nas-ma-glos.jpg" alt="Każdy z nas ma głos" loading="lazy">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ─── -->
+    <section id="faq" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Masz pytania?</p>
+        <h2 class="section-heading--light reveal">FAQ</h2>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary class="faq-question">
+              <span>🎭 Czym są zajęcia musicalowe?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Zajęcia musicalowe to połączenie śpiewu, tańca i aktorstwa w jednym, spójnym programie. Uczestnicy pracują nad scenami i piosenkami z musicali, rozwijając swoje umiejętności artystyczne, uczą się współpracy i budują pewność siebie na scenie. Każdy semestr kończy się pokazem dla rodziny i przyjaciół.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-question">
+              <span>😊 Jestem nieśmiały/a. Czy zajęcia musicalowe są dla mnie?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Jak najbardziej! Wiele osób rozpoczyna swoją przygodę z musicalem właśnie po to, aby nabrać pewności siebie. Dzięki pracy w grupie, zabawom teatralnym i wspólnym występom uczestnicy stopniowo otwierają się na nowe wyzwania i uczą się swobodnego wyrażania siebie. Nasze zajęcia to bezpieczna przestrzeń do rozwoju.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-question">
+              <span>💃 Nie tańczę. Czy nadaję się do szkoły musicalowej?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Oczywiście! Nie wymagamy żadnego wcześniejszego przygotowania tanecznego ani wokalnego. Nasze zajęcia są miejscem nauki, rozwoju i odkrywania talentów. Każdy uczy się we własnym tempie — najważniejsze są chęci, zaangażowanie i dobra zabawa.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-question">
+              <span>🎬 Jak wyglądają musicalowe warsztaty?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Każde zajęcia to intensywna, ale i zabawna praca nad śpiewem, choreografią i scenami aktorskimi. Uczestnicy wspólnie przygotowują fragmenty musicali, uczą się pracy zespołowej i rozwijają swoje talenty. Warsztaty prowadzone są przez doświadczoną kadrę instruktorów w przyjaznej atmosferze.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-question">
+              <span>❤️ Co wyróżnia naszą szkołę musicalową?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Tworzymy miejsce, w którym każdy może rozwijać swoje pasje, zdobywać nowe umiejętności i budować pewność siebie. Łączymy profesjonalne podejście z przyjazną atmosferą, a nasze projekty często zwieńczone są wyjątkowymi pokazami i występami — niekiedy również z muzyką wykonywaną na żywo. Stawiamy na indywidualne podejście do każdego uczestnika.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── DLACZEGO MY ─── -->
+    <section id="dlaczego-my" class="section section--dark">
+      <div class="container">
+        <p class="section-tag section-tag--light reveal">Wyróżniamy się</p>
+        <h2 class="section-heading--light reveal">Dlaczego My&nbsp;Way&nbsp;In&nbsp;Music?</h2>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 44s16-10 16-22A16 16 0 0 0 8 22c0 12 16 22 16 22z"/><circle cx="24" cy="22" r="5"/></svg>
+            </div>
+            <h3>Blisko Ciebie</h3>
+            <p>Zajęcia w centrach kultury w okolicach Warszawy — blisko ciebie.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="20"/><path d="M16 24c2 4 5 6 8 6s6-2 8-6"/><circle cx="18" cy="20" r="2" fill="currentColor"/><circle cx="30" cy="20" r="2" fill="currentColor"/></svg>
+            </div>
+            <h3>Przyjazna atmosfera</h3>
+            <p>Doświadczeni prowadzący, którzy budują relacje i wspierają każdego uczestnika.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 4v16l10-6 10 6V4"/><rect x="8" y="28" width="32" height="16" rx="4"/><path d="M20 36h8"/></svg>
+            </div>
+            <h3>Program 3 w 1</h3>
+            <p>Śpiew, aktorstwo i ruch sceniczny — wszystko w jednym, spójnym programie.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="16" r="10"/><path d="M12 42c0-6.627 5.373-12 12-12s12 5.373 12 12"/><path d="M24 12v8l4 2"/></svg>
+            </div>
+            <h3>Indywidualne podejście</h3>
+            <p>Dopasowujemy tempo i materiał do możliwości każdego uczestnika.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── KONTAKT ─── -->
+    <section id="kontakt" class="section section--accent">
+      <div class="container kontakt-wrap">
+        <div class="kontakt-text">
+          <p class="section-tag section-tag--light reveal">Porozmawiajmy</p>
+          <h2 class="section-heading--light reveal">Kontakt</h2>
+          <p class="kontakt-lead reveal">
+            Chcesz zapisać się na zajęcia lub nawiązać współpracę z centrum kultury?
+            Napisz do nas — odezwiemy się najszybciej jak to możliwe.
+          </p>
+          <div class="kontakt-links reveal">
+            <a href="mailto:mywayinmusic@gmail.com" class="kontakt-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 4 10 8 10-8"/></svg>
+              mywayinmusic@gmail.com
+            </a>
+            <a href="tel:+48500021531" class="kontakt-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              500 021 531
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61579886247560" target="_blank" rel="noopener noreferrer" class="kontakt-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              My Way in Music
+            </a>
+            <a href="https://www.instagram.com/mywayinmusic/" target="_blank" rel="noopener noreferrer" class="kontakt-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              @mywayinmusic
+            </a>
+          </div>
+        </div>
+        <div class="kontakt-form-wrap reveal">
+          <form class="kontakt-form" id="kontaktForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <label class="form-label" for="name">Imię i nazwisko</label>
+              <input class="form-input" type="text" id="name" name="name" required autocomplete="name" placeholder="Jan Kowalski">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="email">Adres e-mail</label>
+              <input class="form-input" type="email" id="email" name="email" required autocomplete="email" placeholder="jan@example.com">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="phone">Telefon <span class="form-optional">(opcjonalnie)</span></label>
+              <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+48 600 000 000">
+            </div>
+            <div class="form-row">
+              <label class="form-label" id="lokalizacjaLabel">Lokalizacja</label>
+              <div class="custom-select" id="lokalizacjaSelect">
+                <input type="hidden" name="lokalizacja" id="lokalizacja" value="Centrum Kultury Raszyn">
+                <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="lokalizacjaLabel">
+                  <span class="custom-select__value">Centrum Kultury Raszyn</span>
+                  <svg class="custom-select__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <ul class="custom-select__menu" role="listbox" tabindex="-1">
+                  <li class="custom-select__option is-selected" role="option" data-value="Centrum Kultury Raszyn" aria-selected="true">Centrum Kultury Raszyn</li>
+                  <li class="custom-select__option" role="option" data-value="Nie dotyczy" aria-selected="false">Nie dotyczy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="message">Wiadomość</label>
+              <textarea class="form-input form-textarea" id="message" name="message" required rows="4" placeholder="Chciałbym zapisać dziecko na zajęcia…"></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="Nowa wiadomość — My Way In Music">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true">
+            <button type="submit" class="btn btn--primary form-submit">Wyślij</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="footer-brand">My Way In Music</a>
+      <p>&copy; 2026 My Way In Music sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61579886247560" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/mywayinmusic/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script>
+    /* ── Mapa (ciemny motyw, Raszyn) ── */
+    const locations = [
+      {
+        name: 'Centrum Kultury Raszyn',
+        address: 'al. Krakowska 29A, Raszyn',
+        lat: 52.1588,
+        lng: 20.9290
+      }
+    ];
+
+    const redPin = L.divIcon({
+      className: 'map-pin',
+      html: '<span class="map-pin-dot"></span>',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14]
+    });
+
+    const mapEl = document.getElementById('map');
+    let mapInstance = null;
+    if (mapEl) {
+      mapInstance = L.map('map', {
+        scrollWheelZoom: false,
+        zoomControl: true
+      }).setView([52.1588, 20.9290], 14);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(mapInstance);
+
+      locations.forEach(loc => {
+        const marker = L.marker([loc.lat, loc.lng], { icon: redPin }).addTo(mapInstance);
+        marker.bindPopup(`<strong>${loc.name}</strong><br>${loc.address}`);
+      });
+
+      mapEl.addEventListener('click', () => mapInstance.scrollWheelZoom.enable());
+      mapEl.addEventListener('mouseleave', () => mapInstance.scrollWheelZoom.disable());
+
+      const mapRevealObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting && mapInstance) {
+            setTimeout(() => mapInstance.invalidateSize(), 100);
+            mapRevealObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      mapRevealObs.observe(mapEl);
+    }
+
+    /* ── Custom dropdown ── */
+    const kontaktForm = document.getElementById('kontaktForm');
+    const formStatus = document.getElementById('formStatus');
+
+    const lokalizacjaSelect = document.getElementById('lokalizacjaSelect');
+    let resetLokalizacja = () => {};
+    if (lokalizacjaSelect) {
+      const trigger = lokalizacjaSelect.querySelector('.custom-select__trigger');
+      const hiddenInput = lokalizacjaSelect.querySelector('#lokalizacja');
+      const valueEl = lokalizacjaSelect.querySelector('.custom-select__value');
+      const options = [...lokalizacjaSelect.querySelectorAll('.custom-select__option')];
+      let focusIdx = options.findIndex(o => o.classList.contains('is-selected'));
+
+      const setSelected = (option) => {
+        options.forEach(o => { o.classList.remove('is-selected','is-focused'); o.setAttribute('aria-selected','false'); });
+        option.classList.add('is-selected');
+        option.setAttribute('aria-selected','true');
+        hiddenInput.value = option.dataset.value;
+        valueEl.textContent = option.dataset.value;
+        focusIdx = options.indexOf(option);
+      };
+      const openMenu = () => { lokalizacjaSelect.classList.add('is-open'); trigger.setAttribute('aria-expanded','true'); };
+      const closeMenu = () => { lokalizacjaSelect.classList.remove('is-open'); trigger.setAttribute('aria-expanded','false'); options.forEach(o => o.classList.remove('is-focused')); };
+
+      trigger.addEventListener('click', () => lokalizacjaSelect.classList.contains('is-open') ? closeMenu() : openMenu());
+      options.forEach(option => {
+        option.addEventListener('click', () => { setSelected(option); closeMenu(); trigger.focus(); });
+        option.addEventListener('mouseenter', () => { options.forEach(o => o.classList.remove('is-focused')); option.classList.add('is-focused'); focusIdx = options.indexOf(option); });
+      });
+      trigger.addEventListener('keydown', (e) => {
+        if (['ArrowDown','ArrowUp','Enter',' '].includes(e.key)) {
+          e.preventDefault();
+          if (!lokalizacjaSelect.classList.contains('is-open')) { openMenu(); return; }
+          if (e.key === 'Enter' || e.key === ' ') { setSelected(options[focusIdx]); closeMenu(); return; }
+          focusIdx = e.key === 'ArrowDown' ? Math.min(focusIdx+1, options.length-1) : Math.max(focusIdx-1, 0);
+          options.forEach(o => o.classList.remove('is-focused'));
+          options[focusIdx].classList.add('is-focused');
+        } else if (e.key === 'Escape') closeMenu();
+      });
+      document.addEventListener('click', (e) => { if (!lokalizacjaSelect.contains(e.target)) closeMenu(); });
+      resetLokalizacja = () => { setSelected(options[0]); closeMenu(); };
+    }
+
+    /* ── Formularz (Formspree) ── */
+    if (kontaktForm) {
+      kontaktForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = kontaktForm.querySelector('.form-submit');
+        btn.disabled = true; btn.textContent = 'Wysyłanie…';
+        formStatus.textContent = ''; formStatus.className = 'form-status';
+        try {
+          const res = await fetch(kontaktForm.action, { method:'POST', body: new FormData(kontaktForm), headers:{Accept:'application/json'} });
+          if (res.ok) { kontaktForm.reset(); resetLokalizacja(); formStatus.textContent = 'Dziękujemy! Wiadomość została wysłana — odezwiemy się wkrótce.'; formStatus.classList.add('form-status--success'); }
+          else throw new Error();
+        } catch { formStatus.textContent = 'Nie udało się wysłać wiadomości. Napisz bezpośrednio na mywayinmusic@gmail.com'; formStatus.classList.add('form-status--error'); }
+        finally { btn.disabled = false; btn.textContent = 'Wyślij'; }
+      });
+    }
+
+    /* ── Gallery lightbox ── */
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLb = () => { lightbox.classList.remove('lightbox--open'); lightbox.setAttribute('aria-hidden','true'); };
+    lightbox.querySelector('.lightbox-close').addEventListener('click', closeLb);
+    lightbox.addEventListener('click', e => { if(e.target===lightbox) closeLb(); });
+    document.addEventListener('keydown', e => { if(e.key==='Escape') closeLb(); });
+
+    /* ── Gallery carousel ── */
+    const carousel = document.getElementById('galleryCarousel');
+    const track = document.getElementById('galleryTrack');
+    const prevBtn = document.getElementById('galleryPrev');
+    const nextBtn = document.getElementById('galleryNext');
+    if (carousel && track) {
+      const scrollAmount = () => {
+        const slide = track.querySelector('.gallery-slide');
+        return slide ? slide.offsetWidth + 12 : 300;
+      };
+      let pos = 0;
+      const maxScroll = () => track.scrollWidth - carousel.offsetWidth;
+
+      const setPos = (val) => {
+        pos = Math.max(0, Math.min(val, maxScroll()));
+        track.style.transform = `translateX(-${pos}px)`;
+      };
+
+      prevBtn?.addEventListener('click', () => setPos(pos - scrollAmount() * 3));
+      nextBtn?.addEventListener('click', () => setPos(pos + scrollAmount() * 3));
+
+      let dragging = false, hasDragged = false, startX = 0, startPos = 0;
+      const onStart = (x) => { dragging = true; hasDragged = false; startX = x; startPos = pos; track.style.transition = 'none'; };
+      const onMove = (x) => { if (!dragging) return; const diff = startX - x; if (Math.abs(diff) > 5) hasDragged = true; setPos(startPos + diff); };
+      const onEnd = () => { if (!dragging) return; dragging = false; track.style.transition = ''; };
+
+      carousel.addEventListener('mousedown', e => { e.preventDefault(); onStart(e.clientX); });
+      window.addEventListener('mousemove', e => onMove(e.clientX));
+      window.addEventListener('mouseup', onEnd);
+
+      carousel.addEventListener('touchstart', e => onStart(e.touches[0].clientX), { passive: true });
+      carousel.addEventListener('touchmove', e => onMove(e.touches[0].clientX), { passive: true });
+      carousel.addEventListener('touchend', onEnd);
+
+      track.querySelectorAll('.gallery-slide').forEach(slide => {
+        slide.addEventListener('click', () => {
+          if (hasDragged) return;
+          const img = slide.querySelector('img');
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.setAttribute('aria-hidden', 'false');
+          lightbox.classList.add('lightbox--open');
+        });
+      });
+    }
+
+    /* ── Sticky nav ── */
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    /* ── Mobile menu ── */
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('nav-links--open', !open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('nav-links--open');
+    }));
+
+    /* ── Smooth scroll ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+
+    /* ── Scroll reveal ── */
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); }});
+    }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(el => revealObs.observe(el));
+
+    /* ── Turnus kadra bio tooltip ── */
+    const bioTooltip = document.createElement('div');
+    bioTooltip.className = 'kadra-tooltip';
+    bioTooltip.setAttribute('role', 'tooltip');
+    document.body.appendChild(bioTooltip);
+
+    let tooltipTimer;
+    const showBio = (btn) => {
+      const bio = btn.dataset.bio;
+      if (!bio) return;
+      const name = btn.querySelector('span')?.childNodes[0]?.textContent || '';
+      bioTooltip.innerHTML = `<strong>${name}</strong><p>${bio}</p>`;
+      bioTooltip.classList.add('kadra-tooltip--open');
+      const r = btn.getBoundingClientRect();
+      const tw = Math.min(320, window.innerWidth - 24);
+      bioTooltip.style.width = tw + 'px';
+      let left = r.left + r.width / 2 - tw / 2;
+      left = Math.max(12, Math.min(left, window.innerWidth - tw - 12));
+      bioTooltip.style.left = left + 'px';
+      bioTooltip.style.top = (r.top + window.scrollY - bioTooltip.offsetHeight - 12) + 'px';
+    };
+    const hideBio = () => { bioTooltip.classList.remove('kadra-tooltip--open'); };
+
+    document.querySelectorAll('.turnus-person[data-bio]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (bioTooltip.classList.contains('kadra-tooltip--open')) { hideBio(); return; }
+        showBio(btn);
+      });
+    });
+    document.addEventListener('click', hideBio);
+
+  </script>
+</body>
+</html>
