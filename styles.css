@@ -832,12 +832,13 @@ strong { color: var(--text); font-weight: 600; }
   align-items: center;
   gap: 0.65rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .turnus-emoji {
   font-size: 1.6rem;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .turnus-header h3 {
@@ -846,6 +847,9 @@ strong { color: var(--text); font-weight: 600; }
   font-weight: 700;
   color: var(--color-cream);
   margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+  line-height: 1.25;
 }
 
 .turnus-meta {
@@ -1919,6 +1923,8 @@ strong { color: var(--text); font-weight: 600; }
   padding: 0.2rem 0.6rem;
   border-radius: 100px;
   margin-left: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .turnus-badge--done {
   background: rgba(76, 175, 80, 0.15);
