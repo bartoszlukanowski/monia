@@ -355,7 +355,6 @@ a { color: inherit; }
   width: clamp(180px, 24vw, 300px);
   height: auto;
   border-radius: 50%;
-  filter: drop-shadow(0 8px 40px rgba(0,0,0,0.4)) drop-shadow(0 0 60px var(--orange-glow));
 }
 
 @keyframes logoFloat {
