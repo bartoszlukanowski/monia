@@ -970,7 +970,7 @@
               <textarea class="form-input form-textarea" id="message" name="message" required rows="4" placeholder="Chciałbym zapisać dziecko na zajęcia…"></textarea>
             </div>
             <input type="hidden" name="_subject" value="Nowa wiadomość — My Way In Music">
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true">
+            <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true" style="display:none !important">
             <button type="submit" class="btn btn--primary form-submit">Wyślij</button>
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
@@ -1096,6 +1096,8 @@
     if (kontaktForm) {
       kontaktForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+        const honeypot = kontaktForm.querySelector('[name="_gotcha"]');
+        if (honeypot) honeypot.value = '';
         const btn = kontaktForm.querySelector('.form-submit');
         btn.disabled = true; btn.textContent = 'Wysyłanie…';
         formStatus.textContent = ''; formStatus.className = 'form-status';
