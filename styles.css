@@ -355,7 +355,8 @@ a { color: inherit; }
 .hero-logo-float img {
   width: clamp(180px, 24vw, 300px);
   height: auto;
-  border-radius: 50%;
+  border-radius: 0;
+  display: block;
 }
 
 @keyframes logoFloat {
